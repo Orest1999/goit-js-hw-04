@@ -1,8 +1,7 @@
 function isEnoughCapacity(products, containerSize) {
-  const totalItems = Object.values(products).reduce((sum,quantity)>= sum + quantity,0);
+  const totalItems = Object.values(products).reduce((sum, quantity) => sum + quantity, 0);
   return totalItems <= containerSize;
 }
-
 console.log(
   isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
 ); // true
